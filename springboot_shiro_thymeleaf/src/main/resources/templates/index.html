@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
+
+<head>
+    <meta charset="UTF-8">
+    <title>index页面</title>
+</head>
+<body>
+<h1><center>测试 页面</center></h1>
+<div>
+<p>
+    Hello <span shiro:principal=""></span>, how are you today ?<br>
+    are you pig?
+</p>
+
+    <a shiro:hasRole="admin" href="https://www.baidu.com" target="_blank">baidu</a>
+    &nbsp;
+    <a shiro:hasRole="admin" href="https://www.pornhub.com" target="_blank">pornhub</a>
+</div>
+<img shiro:hasRole="admin" src="https://i.loli.net/2021/01/02/UoclDZMA7EzOIg3.jpg" height="600" width="1200"/>
+
+</body>
+</html>
